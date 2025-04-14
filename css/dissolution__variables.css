@@ -1,0 +1,25 @@
+/* VARIABLES 
+*/
+:root {
+  /* Durations */
+  --t-main: 0.8s;
+  /* Easings */
+  --eas-expo-inout: cubic-bezier(1, 0, 0, 1);
+  --eas-quart-out: cubic-bezier(0.25, 1, 0.5, 1);
+  /* Colors */
+  --col-bl: #0d1012;
+  --col-wh: #f1f6f8;
+  --col-alp: rgba(1, 0, 0, 0);
+}
+
+/* --------------- Name 
+*/
+
+/* Intro Handler */
+[data-page="w"] {
+  visibility: hidden;
+}
+
+[data-page="frame"] {
+  visibility: hidden;
+}
