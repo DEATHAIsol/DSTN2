@@ -41,6 +41,34 @@
 		.fr {
 			height: calc(var(--vh, 1vh) * 100) !important;
 		}
+
+		@keyframes bounce {
+			0%, 20%, 50%, 80%, 100% {
+				transform: translateY(0);
+			}
+			40% {
+				transform: translateY(-10px);
+			}
+			60% {
+				transform: translateY(-5px);
+			}
+		}
+		.scroll-indicator {
+			position: absolute;
+			bottom: 40px;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+			animation: bounce 2s infinite;
+			z-index: 100;
+		}
+		.scroll-text {
+			font-family: 'DIN Condensed', sans-serif;
+			color: #d6172f;
+			font-size: 18px;
+			letter-spacing: 2px;
+			text-shadow: 0 0 10px rgba(214, 23, 47, 0.5);
+		}
 	</style><!-- gl style inject -->
 	<link rel="stylesheet" href="css/dissolution__variables.css">
 
@@ -482,8 +510,8 @@
 						</div>
 					</div>
 				</a>
-				<div style="text-align: center; margin-top: 20px;">
-					<div class="a__t" style="font-family: 'DIN Condensed', sans-serif; color: #d6172f; font-size: 18px; letter-spacing: 2px;">SCROLL DOWN TO LEARN MORE</div>
+				<div class="scroll-indicator">
+					<div class="scroll-text">SCROLL DOWN TO LEARN MORE</div>
 				</div>
 				 
 			</div>
